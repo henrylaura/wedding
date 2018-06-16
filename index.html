@@ -56,25 +56,28 @@
               <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
                 <br />  <br />
                 <h3 style="color: grey; font-family: 'Great Vibes'; font-size: 40px;" >Henry & Laura</h3>
-                <!-- <img src="images/leaf_banner.png" alt="Girl in a jacket" "> -->
-                <br />  <br />
+                 <br />
+                <br />
+                  <p style="color: grey; font-family: 'Great Vibes'; font-size: 24px; margin: 0; line-height: 1" id="countDown"></p>
+                  <br />
                 <p style="color: grey; font-size: 24px; font-family: 'Montserrat'; font-weight: 700;">
                   Directions
                 </p>
                 <p style="color: grey; font-size: 16px; font-family: 'Montserrat'; font-weight: 600;">
                   The Refectory, Werribee Park Gate 5, off K Road Werribee South 3030
-                  Continue on K Road, approx. 2.5km past the main entry for Werribee Park Mansion and Werribee Park Zoo.  <br />  <br />
-                  Gate 5 is on the right hand side, off K Road near Shadowfax winery. Continue along the gravel driveway to security gate and buzz 'The Refectory' to gain access or call 9731 7101
+                  Continue on K Road, approx. 2.5km past the main entry for Werribee Park Mansion and Werribee Park Zoo.
+
+                  Continue along the gravel driveway to security gate and buzz 'The Refectory' to gain access or call 9731 7101 <br /> 
                 </p>
+                 <a style="color: grey; font-size: 18px;font-family: 'Montserrat'; font-weight: 700; text-decoration: none; font-style: italic; " href="https://github.com/henrylaura/wedding/blob/gh-pages/map.jpg?raw=true">Mansion grounds map (click here)</a>
                  <br />
                 <div style="width: 60%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=250&amp;hl=en&amp;q=%20South%20Dr%2C%20Werribee%20South%20VIC%203030+(Wedding%20Venue)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe></div><br />
                 <!-- <img src="images/map.jpg" alt="Girl in a jacket" style="width:80%;height:600px;"> -->
                 <br />  <br />
-                <a style="color: grey; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; text-decoration: none;" href="http://www.google.com">Gift registery</a>
+                <a style="color: grey; font-size: 24px; font-family: 'Montserrat'; font-weight: 700; text-decoration: none;" href="https://www.myer.com.au/webapp/wcs/stores/servlet/RegistryDetailsView?storeId=10251&catalogId=10051&langId=-1&externalId=678188">Gift registery</a>
                 <br />
-                <p style="color: grey; font-size: 16px; font-family: 'Montserrat'; font-weight: 600; text-decoration: none;">
-                  If you'd like to buy a gift from our registry please click here
-                </p>
+                <a style="color: grey; font-size: 16px; font-family: 'Montserrat'; font-weight: 600; text-decoration: none;" href="https://www.myer.com.au/webapp/wcs/stores/servlet/RegistryDetailsView?storeId=10251&catalogId=10051&langId=-1&externalId=678188">If required our gift registery id is 678188</a>
+                <br />
                 <br />
                 <a style="color: grey; font-size: 24px;font-family: 'Montserrat'; font-weight: 700; text-decoration: none; " href="http://www.google.com">Share your photos</a>
                 <p style="color: grey; font-size: 16px; font-family: 'Montserrat'; font-weight: 600; text-decoration: none;">
@@ -94,4 +97,21 @@
 <div class="mdl-layout__obfuscator"></div>
 </div></div>
 <script src="./material.min.js.download"></script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 8, 2018 12:30:00").getTime();
+
+var x = setInterval(function() {
+    // Get todays date and time
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("countDown").innerHTML = "8th Sept 2018 in "+days +" days";
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countDown").innerHTML = "WEDDING DAY!";
+    }
+}, 1000);
+</script>
 </body></html>

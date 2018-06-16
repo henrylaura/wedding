@@ -39,7 +39,7 @@ body .demo-blog {
 }
 
 .demo-blog .demo-blog__posts {
-  max-width: 900px;
+  max-width: 780px;
   padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +67,8 @@ body .demo-blog {
       -ms-flex-align: stretch;
           align-items: stretch;
   min-height: 360px;
-  background:#fffffA;
+  /*background:#fffffA;*/
+  background:#ffffff;
   padding-left: 20px;
   padding-right: 20px;
 }
